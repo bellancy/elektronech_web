@@ -1,0 +1,56 @@
+* {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.kosik {
+    border: 5px #b90609;
+}
+.nav-right {
+    gap: 1rem;
+}
+.search {
+    padding-right: 2rem;
+}
+.form-control {
+    border-left: none;
+  }
+
+  
+    /* Automatické zmenšení pro mobilní zařízení */
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        font-size: 1rem; 
+      }
+
+      .navbar svg {
+        width: 20px; 
+        height: 20px;
+      }
+
+      .navbar .navbar-brand img {
+        height: 45px; 
+      }
+      .search {
+        padding-right: 0;
+      }
+      .profil img {
+        height: 20px;
+      }
+      .nav-right {
+        padding-top: 0!important;
+      }
+      .kosik {
+        display: flex;
+        align-items: center;
+      }
+      .navbar-toggler-icon {
+        width: 28px;
+        height: 28px;
+      }
+      .navbar-toggler {
+        border: none;
+      }
+    }
+  
