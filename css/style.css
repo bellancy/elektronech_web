@@ -7,50 +7,63 @@
 .kosik {
     border: 5px #b90609;
 }
+
 .nav-right {
     gap: 1rem;
 }
+
 .search {
     padding-right: 2rem;
 }
+
 .form-control {
     border-left: none;
-  }
+}
 
-  
-    /* Automatické zmenšení pro mobilní zařízení */
-    @media (max-width: 991px) {
-      .navbar-collapse {
-        font-size: 1rem; 
-      }
+.under-nav-bg {
+    margin-top: 0.5rem;
+    background-color: #FF9100;
+    height: 2rem;
+}
 
-      .navbar svg {
-        width: 20px; 
+/* Automatické zmenšení pro mobilní zařízení */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        font-size: 1rem;
+    }
+
+    .navbar svg {
+        width: 20px;
         height: 20px;
-      }
+    }
 
-      .navbar .navbar-brand img {
-        height: 45px; 
-      }
-      .search {
+    .navbar .navbar-brand img {
+        height: 45px;
+    }
+
+    .search {
         padding-right: 0;
-      }
-      .profil img {
+    }
+
+    .profil img {
         height: 20px;
-      }
-      .nav-right {
-        padding-top: 0!important;
-      }
-      .kosik {
+    }
+
+    .nav-right {
+        padding-top: 0 !important;
+    }
+
+    .kosik {
         display: flex;
         align-items: center;
-      }
-      .navbar-toggler-icon {
+    }
+
+    .navbar-toggler-icon {
         width: 28px;
         height: 28px;
-      }
-      .navbar-toggler {
-        border: none;
-      }
     }
-  
+
+    .navbar-toggler {
+        border: none;
+    }
+}
