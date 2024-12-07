@@ -109,3 +109,39 @@ body {
     padding-inline: 2.5rem; 
     padding-top: 2rem;
 }
+
+
+.panel2 {
+    padding-inline: 3rem;
+}
+.panel2 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  margin-left: -6rem;  /* Vytvoří prostor vlevo od předchozí šipky */
+  margin-right: -6rem; /* Vytvoří prostor vpravo od následující šipky */
+}
+.btn-1, .btn-2{
+    text-decoration: none!important;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn-1 {
+    background-color: #FFB0A6;
+}
+.btn-2 {
+    background-color: #FFD6D0;
+}
+.card h6 {
+    font-size: 27px;
+    color: #FF9E01;
+}
