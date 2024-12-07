@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fugaz+One&display=swap');
+
 * {
     display: block;
     margin: 0;
     padding: 0;
 }
 
-.kosik {
-    border: 5px #b90609;
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: "Cabin", sans-serif;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+.panel1 h1 .fugaz {
+    font-family: "Fugaz One", sans-serif;
+    color: #FFB0A6;
+    font-size: 50px;
 }
 
 .nav-right {
@@ -23,7 +39,11 @@
 .under-nav-bg {
     margin-top: 0.5rem;
     background-color: #FF9100;
-    height: 2rem;
+    height: 1rem;
+}
+
+body {
+    background-color: black;
 }
 
 /* Automatické zmenšení pro mobilní zařízení */
@@ -66,4 +86,26 @@
     .navbar-toggler {
         border: none;
     }
+}
+
+.panel1 .text{
+    text-align: center;
+    padding-inline: 15rem;
+}
+.panel1 {
+    background-image: url(../images/panel1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-bg {
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 0.8rem;
+    padding-inline: 2.5rem; 
+    padding-top: 2rem;
 }
