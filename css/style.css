@@ -112,7 +112,7 @@ body {
 
 
 .panel2 {
-    padding-inline: 3rem;
+    padding-inline: 0.5rem;
 }
 .panel2 h2 {
     display: flex;
@@ -121,11 +121,6 @@ body {
     padding-top: 3rem;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  margin-left: -6rem;  /* Vytvoří prostor vlevo od předchozí šipky */
-  margin-right: -6rem; /* Vytvoří prostor vpravo od následující šipky */
-}
 .btn-1, .btn-2{
     text-decoration: none!important;
     color: black;
@@ -144,4 +139,13 @@ body {
 .card h6 {
     font-size: 27px;
     color: #FF9E01;
+}
+.card {
+    background-color: black;
+    color: #fff;
+    padding-bottom: 3rem;
+}
+.row {
+    justify-content: center;
+    align-items: center;
 }
