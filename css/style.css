@@ -14,6 +14,11 @@ a {
     font-family: "Cabin", sans-serif;
 }
 
+.obsah {
+    max-width: 1500px;
+    margin: auto;
+}
+
 h1 {
     font-size: 34px;
 }
@@ -88,10 +93,11 @@ body {
     }
 }
 
-.panel1 .text{
+.panel1 .text {
     text-align: center;
     padding-inline: 15rem;
 }
+
 .panel1 {
     background-image: url(../images/panel1.png);
     background-size: contain;
@@ -103,10 +109,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .text-bg {
     background-color: rgb(0, 0, 0, 0.8);
     padding: 0.8rem;
-    padding-inline: 2.5rem; 
+    padding-inline: 2.5rem;
     padding-top: 2rem;
 }
 
@@ -114,6 +121,7 @@ body {
 .panel2 {
     padding-inline: 0.5rem;
 }
+
 .panel2 h2 {
     display: flex;
     align-items: center;
@@ -121,8 +129,9 @@ body {
     padding-top: 3rem;
 }
 
-.btn-1, .btn-2{
-    text-decoration: none!important;
+.btn-1,
+.btn-2 {
+    text-decoration: none !important;
     color: black;
     display: flex;
     align-items: center;
@@ -130,22 +139,43 @@ body {
     border-radius: 5px;
     padding: 5px;
 }
+
 .btn-1 {
     background-color: #FFB0A6;
 }
+
 .btn-2 {
     background-color: #FFD6D0;
 }
+
 .card h6 {
     font-size: 27px;
     color: #FF9E01;
 }
+
 .card {
     background-color: black;
     color: #fff;
     padding-bottom: 3rem;
 }
+
 .row {
     justify-content: center;
     align-items: center;
+}
+
+div.sticky {
+    position: sticky;
+    top: 9rem;
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background-color: black;
+}
+.search-input::placeholder, .sticky p {
+    color: #fff;
+    opacity: 40%;
 }
