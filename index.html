@@ -12,8 +12,8 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg container pb-3 pt-4">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg  pb-3 pt-4 px-4">
+    <div class="container-fluid px-0">
       <a class="navbar-brand mt-1" href="index.html"><img src="images/Untitled_Artwork 7.png" alt="" height="38px"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,11 +81,17 @@
 
   <div class="obsah text-white">
     <div class="d-flex">
-
+      
       <div class="postrana col-lg-3 d-none d-lg-block px-3">
         <div class="sticky">
+          <select class="form-select bg-black text-white" aria-label="Default select example">
+            <option selected>Řadit od:</option>
+            <option value="1">Nejlevnějšího</option>
+            <option value="2">Nejdražšího</option>
+            <option value="3">Nejprodávanějšího</option>
+          </select>
+        
           
-          <p  class="pt-2" >Stylové stolní lampy pro každý interiér.</p>
           <h5 class="pt-3" >Dostupnost</h5>
 
           <div class="form-check">
@@ -172,7 +178,7 @@
           </div>
           <hr class="featurette-divider">
 
-          <h5 class="pt-3" >Materiál</h5>
+          <h5 class="pt-3 pb-2" >Materiál</h5>
           <div class="form-check">
             <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
@@ -196,6 +202,49 @@
             <label class="form-check-label" for="flexCheckChecked">
               Keramika
             </label>
+          </div>
+
+          <hr class="featurette-divider">
+          <div class="color-picker">
+            <label for="color" class="fs-5 pt-3 pb-3" ><h5>Vyberte barvu:</h5></label>
+
+            
+            <div class="color-option">
+              <input type="checkbox" id="red" name="color" value="red" class="color-radio">
+              <label for="red" class="color-box red"><p>Červená</p></label> 
+            </div>
+
+            <div class="color-option">
+              <input type="checkbox" id="orange" name="color" value="orange" class="color-radio">
+              <label for="orange" class="color-box orange"><p>Oranžová</p></label>
+            </div>
+
+            <div class="color-option">
+              <input type="checkbox" id="yellow" name="color" value="yellow" class="color-radio">
+              <label for="yellow" class="color-box yellow"><p>Žlutá</p></label>
+            </div>
+
+            <div class="color-option">
+              <input type="checkbox" id="green" name="color" value="green" class="color-radio">
+              <label for="green" class="color-box green"><p>Zelená</p></label>
+            </div>
+
+            <div class="color-option">
+              <input type="checkbox" id="blue" name="color" value="blue" class="color-radio">
+              <label for="blue" class="color-box blue"><p>Modrá</p></label>
+            </div>
+
+            <div class="color-option">
+              <input type="checkbox" id="purple" name="color" value="purple" class="color-radio">
+              <label for="purple" class="color-box purple"><p>Fialová</p></label>
+            </div>
+            <div class="color-option">
+              <input type="checkbox" id="pink" name="color" value="pink" class="color-radio">
+              <label for="pink" class="color-box pink"><p>Růžová</p></label>
+            </div>
+
+
+
           </div>
           
           

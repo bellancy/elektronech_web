@@ -14,7 +14,9 @@ a {
     font-family: "Cabin", sans-serif;
 }
 
-.obsah {
+.obsah,
+nav,
+.under-nav-bg {
     max-width: 1500px;
     margin: auto;
 }
@@ -33,9 +35,10 @@ h1 {
     background-color: #FF9100 !important;
     border-color: var(--primary-color) !important;
 }
+
 .form-range::-webkit-slider-thumb {
-    background-color: #FF9100!important;
-  }
+    background-color: #FF9100 !important;
+}
 
 
 .nav-right {
@@ -119,8 +122,9 @@ body {
     align-items: center;
 }
 
+
 .text-bg {
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, 0.7);
     padding: 0.8rem;
     padding-inline: 2.5rem;
     padding-top: 2rem;
@@ -174,14 +178,89 @@ body {
 }
 
 div.sticky {
-
-    padding-top: 2rem;
     padding-inline: 1rem;
-
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: sticky;
+    top: 0;
 }
 
-.search-input::placeholder,
-.sticky p {
+.postrana {
+    margin-top: 3rem;
+}
+
+.search-input::placeholder {
     color: #fff;
     opacity: 40%;
+}
+
+.sticky h5 {
+    font-weight: 600 !important;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px;
+}
+
+
+.color-picker {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-select {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.color-radio {
+    display: none;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+.orange {
+    background-color: #ff6600;
+}
+
+.yellow {
+    background-color: #ffd900;
+}
+
+.green {
+    background-color: #06b93c;
+}
+
+.blue {
+    background-color: #00aeff;
+}
+
+.purple {
+    background-color: #c063fd;
+}
+
+.pink {
+    background-color: #ff74f3;
+}
+
+.color-radio:checked+.color-box {
+    border: 2px solid #fff;
+}
+
+.color-picker label p {
+    padding-left: 2.5rem;
+    padding-top: 4px;
 }
