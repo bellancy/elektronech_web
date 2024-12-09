@@ -66,7 +66,7 @@ body {
     background-color: black;
 }
 
-/* Automatické zmenšení pro mobilní zařízení */
+/*mobil */
 @media (max-width: 991px) {
     .navbar-collapse {
         font-size: 1rem;
@@ -143,8 +143,13 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 3rem;
+    font-size: 40px;
 }
-
+@media (min-width: 768px) {
+    .panel2 h2 {
+        font-size: 32px;
+    }
+}
 .btn-1,
 .btn-2 {
     text-decoration: none !important;
@@ -158,6 +163,7 @@ body {
 
 .btn-1 {
     background-color: #FFB0A6;
+    width: 100%;
 }
 
 .btn-2 {
@@ -174,7 +180,17 @@ body {
     color: #fff;
     padding-bottom: 3rem;
 }
-
+.card p {
+    font-size: 22px;
+}
+.cena {
+    font-size: 32px;
+}
+@media (min-width: 768px) {
+    .card p {
+        font-size: 18px;
+    }
+}
 .row {
     justify-content: center;
     align-items: center;
@@ -182,7 +198,7 @@ body {
 
 div.sticky {
     padding-inline: 1rem;
-    height: 90vh;
+    height: 93vh;
     overflow-y: auto;
     overflow-x: hidden;
     position: sticky;
@@ -211,7 +227,13 @@ input[type="search"] {
     background-position: right 1rem center;
     background-size: 16px;
 }
-
+.navbar-toggler-icon {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28ff, ff, ff, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px;
+}
 
 .color-picker {
     display: flex;
@@ -269,3 +291,5 @@ input[type="search"] {
     padding-left: 2.5rem;
     padding-top: 4px;
 }
+
+

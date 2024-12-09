@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+<script>// Funkce pro přidání položky s cenou a množstvím
+    function addToCart(productName, productId, price, quantity) {
+        cart.push({
+            name: productName,
+            id: productId,
+            price: price,
+            quantity: quantity
+        });
+        updateCartDisplay();
+    }
+    </script>
+<div id="cart">
+    <h2>Košík</h2>
+    <ul id="cartItems">
+        <!-- Seznam položek košíku -->
+    </ul>
+    <p id="totalCount">Počet položek: 0</p>
+</div>
+
+
+</body>
+</html>
