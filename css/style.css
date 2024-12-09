@@ -14,7 +14,10 @@ a {
     font-family: "Cabin", sans-serif;
 }
 
-.obsah,
+.obsah {
+    max-width: 1400px;
+    margin: auto;
+}
 nav,
 .under-nav-bg {
     max-width: 1500px;
@@ -179,13 +182,15 @@ body {
 
 div.sticky {
     padding-inline: 1rem;
-    height: 100vh;
+    height: 90vh;
     overflow-y: auto;
     overflow-x: hidden;
     position: sticky;
     top: 0;
 }
-
+input[type="search"] {
+    color:  rgb(255, 255, 255)!important;
+}
 .postrana {
     margin-top: 3rem;
 }
