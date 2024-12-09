@@ -29,6 +29,15 @@ h1 {
     font-size: 50px;
 }
 
+.form-check-input:checked {
+    background-color: #FF9100 !important;
+    border-color: var(--primary-color) !important;
+}
+.form-range::-webkit-slider-thumb {
+    background-color: #FF9100!important;
+  }
+
+
 .nav-right {
     gap: 1rem;
 }
@@ -165,17 +174,14 @@ body {
 }
 
 div.sticky {
-    position: sticky;
-    top: 9rem;
+
     padding-top: 2rem;
-    padding-inline: 2rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow-y: auto;
-    background-color: black;
+    padding-inline: 1rem;
+
 }
-.search-input::placeholder, .sticky p {
+
+.search-input::placeholder,
+.sticky p {
     color: #fff;
     opacity: 40%;
 }

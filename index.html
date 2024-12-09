@@ -84,8 +84,8 @@
 
       <div class="postrana col-lg-3 d-none d-lg-block px-3">
         <div class="sticky">
-          <a class="navbar-brand mt-1" href="index.html"><img src="images/Untitled_Artwork 7.png" alt="" height="25px"> </a>
-          <p>Stylové stolní lampy pro každý interiér.</p>
+          
+          <p  class="pt-2" >Stylové stolní lampy pro každý interiér.</p>
           <h5 class="pt-3" >Dostupnost</h5>
 
           <div class="form-check">
@@ -156,32 +156,48 @@
           </div>
           <hr class="featurette-divider">
 
-          <label for="customRange1" class="form-label mt-3">Cena</label>
-          <input type="range" class="form-range" id="customRange1">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Malá (do 30 cm)
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Střední (30–50 cm)
-            </label>
-          </div>
-          <div class="form-check pb-1">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Velká (nad 50 cm)
-            </label>
+         
+
+          <div class="pb-2" >
+            <label for="priceRange" class="price-range-label fs-4">Cena:</label>
+            <input type="range" class="form-range" id="priceRange" min="0" max="1500" step="10" value="500" 
+                   oninput="updatePriceValue(this.value)">
+            <div class="d-flex justify-content-between">
+              <span>0 Kč</span>
+              <span>1500 Kč</span>
+            </div>
+            <div class=" mt-2 d-flex justify-content-center">
+              <span id="priceValue" class="mx-1" >500</span> Kč
+            </div>
           </div>
           <hr class="featurette-divider">
 
-          <label for="customRange1" class="form-label mt-3">Cena</label>
-          <input type="range" class="form-range" id="customRange1">
-
-
+          <h5 class="pt-3" >Materiál</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Kov
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Sklo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Plast
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Keramika
+            </label>
+          </div>
+          
           
         </div>
 
@@ -269,7 +285,7 @@
               <div class="card  w-100 d-flex flex-column ">
                 <img src="images/produkt4.png" class="card-img-top" alt="...">
                 <div class="card-body px-0">
-                  <p class="card-text">Bauhaus Mushroom Donut Skleněná stolní lampa</p>
+                  <p class="card-text">Bauhaus Mushroom Donut Minimalistická skleněná stolní lampa</p>
                   <h6 class="cena pb-4 pt-2">479, 00 kč</h6>
                   <a href="#" class="btn-1"> <svg fill="#000" width="25px" height="25px" viewBox="0 0 24 24"
                       id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
@@ -337,7 +353,7 @@
               <div class="card w-100 d-flex flex-column ">
                 <img src="images/produkt8.png" class="card-img-top" alt="...">
                 <div class="card-body px-0">
-                  <p class="card-text">Zelená vintage Bankers Stolní lampa LED kov/sklo</p>
+                  <p class="card-text">Velká zelená vintage Bankers Stolní lampa LED kov/sklo</p>
                   <h6 class="cena pb-4 pt-2">589, 90 kč</h6>
                   <a href="#" class="btn-1"> <svg fill="#000" width="25px" height="25px" viewBox="0 0 24 24"
                       id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
@@ -374,7 +390,7 @@
               <div class="card  w-100 d-flex flex-column ">
                 <img src="images/produkt10.png" class="card-img-top" alt="...">
                 <div class="card-body px-0">
-                  <p class="card-text">Casa Viola - skleněná noční lampa zeleno-fialová</p>
+                  <p class="card-text">Casa Viola - skleněná noční lampa zeleno/fialovo/růžová</p>
                   <h6 class="cena pb-4 pt-2">659, 90 kč</h6>
                   <a href="#" class="btn-1"> <svg fill="#000" width="25px" height="25px" viewBox="0 0 24 24"
                       id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
@@ -483,6 +499,11 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function updatePriceValue(value) {
+        document.getElementById('priceValue').textContent = value;
+      }
+    </script>
 </body>
 
 </html>
