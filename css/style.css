@@ -283,7 +283,7 @@ input[type="search"] {
     background-color: #ff74f3;
 }
 
-.color-radio:checked+.color-box {
+.color-radio:checked+.color-box, .strana-fotky div a:hover {
     border: 2px solid #fff;
 }
 
@@ -293,3 +293,31 @@ input[type="search"] {
 }
 
 
+
+
+
+
+.popis h3 {
+    color: #FF9100;
+}
+.popis p {
+    opacity: 80%;
+}
+.parametry p {
+    opacity: 100%;
+}
+.popis p, .recenze p, .doprava p {
+    margin-bottom: 0!important;
+}
+
+
+
+.share-like button {
+    border-radius: 5px;
+    padding: 5px;
+}
+@media (max-width: 900px) {
+    .fotky {
+        
+    }
+}
