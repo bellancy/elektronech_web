@@ -18,6 +18,7 @@ a {
     max-width: 1400px;
     margin: auto;
 }
+
 nav,
 .under-nav-bg {
     max-width: 1500px;
@@ -145,11 +146,13 @@ body {
     padding-top: 3rem;
     font-size: 40px;
 }
+
 @media (min-width: 768px) {
     .panel2 h2 {
         font-size: 32px;
     }
 }
+
 .btn-1,
 .btn-2 {
     text-decoration: none !important;
@@ -180,17 +183,21 @@ body {
     color: #fff;
     padding-bottom: 3rem;
 }
+
 .card p {
     font-size: 22px;
 }
+
 .cena {
     font-size: 32px;
 }
+
 @media (min-width: 768px) {
     .card p {
         font-size: 18px;
     }
 }
+
 .row {
     justify-content: center;
     align-items: center;
@@ -204,9 +211,11 @@ div.sticky {
     position: sticky;
     top: 0;
 }
+
 input[type="search"] {
-    color:  rgb(255, 255, 255)!important;
+    color: rgb(255, 255, 255) !important;
 }
+
 .postrana {
     margin-top: 3rem;
 }
@@ -227,6 +236,7 @@ input[type="search"] {
     background-position: right 1rem center;
     background-size: 16px;
 }
+
 .navbar-toggler-icon {
     appearance: none;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28ff, ff, ff, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -283,7 +293,8 @@ input[type="search"] {
     background-color: #ff74f3;
 }
 
-.color-radio:checked+.color-box, .strana-fotky div a:hover {
+.color-radio:checked+.color-box,
+.strana-fotky div a:hover {
     border: 2px solid #fff;
 }
 
@@ -300,14 +311,19 @@ input[type="search"] {
 .popis h3 {
     color: #FF9100;
 }
+
 .popis p {
     opacity: 80%;
 }
+
 .parametry p {
     opacity: 100%;
 }
-.popis p, .recenze p, .doprava p {
-    margin-bottom: 0!important;
+
+.popis p,
+.recenze p,
+.doprava p {
+    margin-bottom: 0 !important;
 }
 
 
@@ -316,8 +332,37 @@ input[type="search"] {
     border-radius: 5px;
     padding: 5px;
 }
-@media (max-width: 900px) {
-    .fotky {
-        
-    }
+
+.rate {
+    display: inline-flex;
+    direction: rtl;
+    font-size: 2rem;
+}
+
+.rate input {
+    display: none;
+}
+
+.rate label {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.rate input:checked~label {
+    color: gold;
+}
+
+.rate label:hover,
+.rate label:hover~label {
+    color: gold;
+}
+
+.podrobnosti h5 {
+    color: #ffc001;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.podrobnosti hr {
+   margin: 0;
+   margin-top: 10px;
 }
