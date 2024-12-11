@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fugaz+One&display=swap');
 
-* {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
 h1,
 h2,
 h3,
@@ -29,7 +23,7 @@ h1 {
     font-size: 34px;
 }
 
-.panel1 h1 .fugaz {
+.fugaz {
     font-family: "Fugaz One", sans-serif;
     color: #FFB0A6;
     font-size: 50px;
@@ -98,20 +92,17 @@ body {
         display: flex;
         align-items: center;
     }
-
+/* 
     .navbar-toggler-icon {
         width: 28px;
         height: 28px;
-    }
+    } */
 
-    .navbar-toggler {
-        border: none;
-    }
 }
 
 .panel1 .text {
     text-align: center;
-    padding-inline: 15rem;
+    margin-inline: 15rem;
 }
 
 .panel1 {
@@ -144,12 +135,12 @@ body {
     align-items: center;
     justify-content: center;
     padding-top: 3rem;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 @media (min-width: 768px) {
     .panel2 h2 {
-        font-size: 32px;
+        
     }
 }
 
@@ -174,29 +165,25 @@ body {
 }
 
 .card h6 {
-    font-size: 27px;
+    font-size: 24px;
     color: #FF9E01;
 }
 
 .card {
     background-color: black;
     color: #fff;
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
-.card p {
-    font-size: 22px;
+.card p, .card a {
+    font-size: 17px;
 }
 
 .cena {
     font-size: 32px;
 }
 
-@media (min-width: 768px) {
-    .card p {
-        font-size: 18px;
-    }
-}
+
 
 .row {
     justify-content: center;
@@ -237,13 +224,13 @@ input[type="search"] {
     background-size: 16px;
 }
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
     appearance: none;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28ff, ff, ff, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 16px;
-}
+} */
 
 .color-picker {
     display: flex;
@@ -393,4 +380,11 @@ input[type="search"] {
 }
 .recenze-img img {
     max-height: 100px;
+}
+
+.products.row, .recenze div {
+    align-items: stretch;
+}
+.products .card {
+    height: 100%;
 }
