@@ -336,7 +336,7 @@ input[type="search"] {
 .rate {
     display: inline-flex;
     direction: rtl;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .rate input {
@@ -365,4 +365,29 @@ input[type="search"] {
 .podrobnosti hr {
    margin: 0;
    margin-top: 10px;
+}
+.tab {
+    background-color: #FFB0A6;
+    padding-inline: 2rem;
+    opacity: 80%;
+    border-radius: 10px;
+}
+.recenze-text {
+    border: 1px solid  #fff;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.pfp {
+    border-radius: 50%;
+    float: inline-start;
+}
+.dano {
+    margin-left: 5rem;
+}
+.vybral, .cas {
+    opacity: 50%;
+}
+.cas {
+    display: flex;
+    justify-content: end;
 }
