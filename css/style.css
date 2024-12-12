@@ -236,7 +236,7 @@ input[type="search"] {
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.color-checkbox {
+.color-radio {
     display: none;
 }
 
@@ -275,7 +275,7 @@ input[type="search"] {
     background-color: #ff74f3;
 }
 
-.color-checkbox:checked+.color-box,
+.color-radio:checked+.color-box,
 .strana-fotky div a:hover {
     border: 2px solid #fff;
 }
