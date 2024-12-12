@@ -102,7 +102,6 @@ body {
 
 .panel1 .text {
     text-align: center;
-    margin-inline: 15rem;
 }
 
 .panel1 {
@@ -237,7 +236,7 @@ input[type="search"] {
     border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.color-radio {
+.color-checkbox {
     display: none;
 }
 
@@ -276,12 +275,12 @@ input[type="search"] {
     background-color: #ff74f3;
 }
 
-.color-radio:checked+.color-box,
+.color-checkbox:checked+.color-box,
 .strana-fotky div a:hover {
     border: 2px solid #fff;
 }
 
-.color-picker label p {
+.color-picker label {
     padding-left: 2.5rem;
     padding-top: 4px;
 }
@@ -397,4 +396,27 @@ input[type="search"] {
 }
 .dropdown .btn  {
     border: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+    right: 0;
+    left: initial;
+}
+
+.cena-kosik {
+ color: #ff6600;
+}
+.kosik img {
+    padding-bottom: 10px;
+}
+
+.btn-1,
+.btn-2 {
+    text-decoration: none !important;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
 }
