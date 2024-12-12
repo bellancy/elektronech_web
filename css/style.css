@@ -138,11 +138,7 @@ body {
     font-size: 32px;
 }
 
-@media (min-width: 768px) {
-    .panel2 h2 {
-        
-    }
-}
+
 
 .btn-1,
 .btn-2 {
@@ -387,4 +383,18 @@ input[type="search"] {
 }
 .products .card {
     height: 100%;
+}
+.filtr-bt button {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+    .panel1 {
+        margin-top: 0;
+    }
+}
+.dropdown .btn  {
+    border: none;
 }

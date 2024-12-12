@@ -12,7 +12,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg  pb-3 pt-4 px-4" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg  pb-3 pt-4 px-3 px-md-5" data-bs-theme="dark">
     <div class="container-fluid px-0">
       <a class="navbar-brand mt-1" href="index.html"><img src="images/Untitled_Artwork 7.png" alt="" height="38px"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,19 +56,32 @@
             </a>
           </div>
 
-          <div class="mt-2 kosik border-start border-white ps-2">
-            <div class="nav-item">
-              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <svg fill="#fff" width="35px" height="35px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
+          <div class="dropdown border-start border-white ps-2 mt-2 text-white">
+            
+            <svg fill="#fff" width="35px" height="35px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                </svg>
-                Košík
-              </a>
-            </div>
-          </div>
+                </svg>Košík
+                <a class="btn btn-secondary dropdown-toggle bg-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+            <ul class="dropdown-menu ">
+              <li class="dropdown-item">
+                <img src="images/produkt4.png" alt="" height="60px">
+                <p>Bauhaus Mushroom </p>
+                <p class="cena-kosik">479, 00kč</p>
+              </li>
+              <hr class="featurette-divider">
 
+              <li class="dropdown-item">
+                <img src="images/produkt8.png" alt="" height="60px">
+                <p>vintage Bankers</p>
+                <p class="cena-kosik">589, 90kč</p>
+              </li>
+
+              
+             
+            </ul>
+          </div>
 
 
         </div>
@@ -76,6 +89,208 @@
     </div>
   </nav>
   <div class="under-nav-bg">
+  </div>
+  <div class="text-black filtr-bt d-lg-none">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-light d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Zobrazit filtrovani
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <select class="form-select bg-black text-white" aria-label="Default select example">
+              <option selected>Řadit od:</option>
+              <option value="1">Nejlevnějšího</option>
+              <option value="2">Nejdražšího</option>
+              <option value="3">Nejprodávanějšího</option>
+            </select>
+  
+  
+            <h5 class="pt-3">Dostupnost</h5>
+  
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Skladem
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label pb-1" for="flexCheckChecked">
+                Na objednání
+              </label>
+            </div>
+            <hr class="featurette-divider">
+  
+            <h5 class="pt-2">Styl lampy</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Vintage
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Moderní
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Retro
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Industriální
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label pb-1" for="flexCheckChecked">
+                Minimalistický
+              </label>
+            </div>
+            <hr class="featurette-divider">
+            <h5 class="pt-2">Velikost</h5>
+  
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Malá (do 30 cm)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Střední (30–50 cm)
+              </label>
+            </div>
+            <div class="form-check pb-1">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Velká (nad 50 cm)
+              </label>
+            </div>
+            <hr class="featurette-divider">
+  
+  
+  
+            <div class="pb-2">
+              <label for="priceRange" class="price-range-label fs-4">Cena:</label>
+              <input type="range" class="form-range" id="priceRange" min="0" max="1500" step="10" value="500"
+                oninput="updatePriceValue(this.value)">
+              <div class="d-flex justify-content-between">
+                <span>0 Kč</span>
+                <span>1500 Kč</span>
+              </div>
+              <div class=" mt-2 d-flex justify-content-center">
+                <span id="priceValue" class="mx-1">500</span> Kč
+              </div>
+            </div>
+            <hr class="featurette-divider">
+  
+            <h5 class="pt-3 pb-2">Materiál</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Kov
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Sklo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Plast
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Keramika
+              </label>
+            </div>
+  
+            <hr class="featurette-divider">
+            <div class="color-picker">
+              <label for="color" class="fs-5 pt-3 pb-3">
+                <h5>Vyberte barvu:</h5>
+              </label>
+  
+  
+              <div class="color-option">
+                <input type="checkbox" id="red" name="color" value="red" class="color-radio">
+                <label for="red" class="color-box red">
+                  <p>Červená</p>
+                </label>
+              </div>
+  
+              <div class="color-option">
+                <input type="checkbox" id="orange" name="color" value="orange" class="color-radio">
+                <label for="orange" class="color-box orange">
+                  <p>Oranžová</p>
+                </label>
+              </div>
+  
+              <div class="color-option">
+                <input type="checkbox" id="yellow" name="color" value="yellow" class="color-radio">
+                <label for="yellow" class="color-box yellow">
+                  <p>Žlutá</p>
+                </label>
+              </div>
+  
+              <div class="color-option">
+                <input type="checkbox" id="green" name="color" value="green" class="color-radio">
+                <label for="green" class="color-box green">
+                  <p>Zelená</p>
+                </label>
+              </div>
+  
+              <div class="color-option">
+                <input type="checkbox" id="blue" name="color" value="blue" class="color-radio">
+                <label for="blue" class="color-box blue">
+                  <p>Modrá</p>
+                </label>
+              </div>
+  
+              <div class="color-option">
+                <input type="checkbox" id="purple" name="color" value="purple" class="color-radio">
+                <label for="purple" class="color-box purple">
+                  <p>Fialová</p>
+                </label>
+              </div>
+              <div class="color-option">
+                <input type="checkbox" id="pink" name="color" value="pink" class="color-radio">
+                <label for="pink" class="color-box pink">
+                  <p>Růžová</p>
+                </label>
+              </div>
+  
+  
+  
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="obsah text-white container-fluid">
