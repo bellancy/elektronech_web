@@ -14,7 +14,7 @@
 <body>
 
   <nav class="navbar navbar-expand-lg  pb-3 pt-4 px-3 px-md-5" data-bs-theme="dark">
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0 ">
       <a class="navbar-brand mt-1" href="index.html"><img src="images/Untitled_Artwork7.png" alt="" height="38"> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
         </ul>
 
 
-        <div class="nav-right d-flex pt-3">
+        <div class="nav-right d-flex flex-column flex-sm-row pt-2">
           <div class="search mt-2">
             <div class="input-group d-flex">
               <span class="input-group-text bg-black">
@@ -45,49 +45,59 @@
             </div>
           </div>
 
-          <div class="mt-3 profil">
-            <a href="#"><img src="images/profile-circle-svgrepo-com.png" alt="" height="33"></a>
+
+          <div class="d-flex flex-row gap-3 m-auto">
+
+            <div class=" profil">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                </svg></a>
+            </div>
+            <div class="like">
+              <a href="#">
+                <svg width="35" height="35" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z"
+                    fill="#fff" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="dropdown border-start border-white ps-2 mt-2 text-white kos">
+
+              <a href="kosik.html"> <svg fill="#fff" width="35" height="35" viewBox="0 0 24 24" data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                </svg></a>Košík
+              <a class="btn btn-secondary dropdown-toggle bg-black" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"></a>
+              <ul class="dropdown-menu ">
+                <li class="dropdown-item">
+                  <img src="images/produkt4.png" alt="" height="60">
+                  <p>Bauhaus Mushroom </p>
+                  <p class="cena-kosik">479, 00kč</p>
+                </li>
+                <li class="dropdown-item">
+                  <hr class="featurette-divider">
+
+                </li>
+
+                <li class="dropdown-item">
+                  <img src="images/produkt8.png" alt="" height="60">
+                  <p>vintage Bankers</p>
+                  <p class="cena-kosik">589, 90kč</p>
+                </li>
+
+
+
+              </ul>
+            </div>
           </div>
-          <div class="mt-3">
-            <a href="#">
-              <svg width="30" height="30" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z"
-                  fill="#fff" />
-              </svg>
-            </a>
-          </div>
 
-          <div class="dropdown border-start border-white ps-2 mt-3 text-white">
-
-            <svg fill="#fff" width="35" height="35" viewBox="0 0 24 24" data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-            </svg>Košík
-            <a class="btn btn-secondary dropdown-toggle bg-black" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false"></a>
-            <ul class="dropdown-menu ">
-              <li class="dropdown-item">
-                <img src="images/produkt4.png" alt="" height="60">
-                <p>Bauhaus Mushroom </p>
-                <p class="cena-kosik">479, 00kč</p>
-              </li>
-              <li class="dropdown-item">
-                <hr class="featurette-divider">
-
-              </li>
-
-              <li class="dropdown-item">
-                <img src="images/produkt8.png" alt="" height="60">
-                <p>vintage Bankers</p>
-                <p class="cena-kosik">589, 90kč</p>
-              </li>
-
-
-
-            </ul>
-          </div>
 
 
         </div>
@@ -190,7 +200,8 @@
 
             <div class="pb-2">
               <label for="priceRange0" class="price-range-label fs-4">Cena:</label>
-              <input type="range" id="priceRange0" class="form-range" min="0" max="1500" step="10" value="500" oninput="updatePriceValue(this.value)">
+              <input type="range" id="priceRange0" class="form-range" min="0" max="1500" step="10" value="500"
+                oninput="updatePriceValue(this.value)">
               <div class="d-flex justify-content-between">
                 <span>0 Kč</span>
                 <span>1500 Kč</span>
@@ -229,7 +240,7 @@
 
             <hr class="featurette-divider">
             <div class="color-picker">
-              <label for="colorSelect" class="fs-5 pt-3 pb-3 h5">
+              <label class="fs-5 pt-3 pb-3 h5">
                 Vyberte barvu:
               </label>
               <div class="color-option">
@@ -289,7 +300,7 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
 
 
   <div class="obsah text-white container-fluid">
@@ -314,7 +325,7 @@
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value=""  id="flexCheckChecked31">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked31">
             <label class="form-check-label pb-1" for="flexCheckChecked31">
               Na objednání
             </label>
@@ -323,7 +334,7 @@
 
           <h5 class="pt-2">Styl lampy</h5>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault32">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault32">
             <label class="form-check-label" for="flexCheckDefault32">
               Vintage
             </label>
@@ -335,7 +346,7 @@
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value=""  for="flexCheckDefault34">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault34">
             <label class="form-check-label" for="flexCheckDefault34">
               Retro
             </label>
@@ -347,7 +358,7 @@
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" for="flexCheckChecked36">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked36">
             <label class="form-check-label pb-1" for="flexCheckChecked36">
               Minimalistický
             </label>
@@ -362,7 +373,7 @@
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value=""  for="flexCheckChecked38">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked38">
             <label class="form-check-label" for="flexCheckChecked38">
               Střední (30–50 cm)
             </label>
@@ -386,87 +397,87 @@
               <span>1500 Kč</span>
             </div>
             <div class=" mt-2 d-flex justify-content-center">
-              <span class="mx-1">500</span> Kč
+              <span class="mx-1" id="priceValue">500</span> Kč
             </div>
           </div>
           <hr class="featurette-divider">
 
           <h5 class="pt-3 pb-2">Materiál</h5>
           <div class="form-check">
-            <input class="form-check-input" type="radio" value="">
-            <label class="form-check-label" for="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">
               Kov
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" value="">
-            <label class="form-check-label" for="flexCheckChecked">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">
               Sklo
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" value="">
-            <label class="form-check-label" for="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">
               Plast
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" value="">
-            <label class="form-check-label" for="flexCheckChecked">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label">
               Keramika
             </label>
           </div>
 
           <hr class="featurette-divider">
           <div class="color-picker">
-            <label for="color" class="fs-5 pt-3 pb-3 h5">
+            <label class="fs-5 pt-3 pb-3 h5">
               Vyberte barvu:
             </label>
 
 
             <div class="color-option">
-              <input type="radio" name="color" value="red" class="color-radio">
+              <input type="checkbox" id="red" name="color" value="red" class="color-radio">
               <label for="red" class="color-box red ">
-                Červená
+                <span class="cc">Červená</span>
               </label>
             </div>
 
             <div class="color-option">
-              <input type="radio" name="color" value="orange" class="color-radio">
+              <input type="checkbox" id="orange" name="color" value="orange" class="color-radio">
               <label for="orange" class="color-box orange ">
                 Oranžová
               </label>
             </div>
 
             <div class="color-option">
-              <input type="radio" name="color" value="yellow" class="color-radio">
+              <input type="checkbox" id="yellow" name="color" value="yellow" class="color-radio">
               <label for="yellow" class="color-box yellow ">
                 Žlutá
               </label>
             </div>
 
             <div class="color-option">
-              <input type="radio" name="color" value="green" class="color-radio">
+              <input type="checkbox" id="green" name="color" value="green" class="color-radio">
               <label for="green" class="color-box green ">
                 Zelená
               </label>
             </div>
 
             <div class="color-option">
-              <input type="radio" name="color" value="blue" class="color-radio">
+              <input type="checkbox" id="blue" name="color" value="blue" class="color-radio">
               <label for="blue" class="color-box blue">
                 Modrá
               </label>
             </div>
 
             <div class="color-option">
-              <input type="radio" name="color" value="purple" class="color-radio">
+              <input type="checkbox" id="purple" name="color" value="purple" class="color-radio">
               <label for="purple" class="color-box purple ">
                 Fialová
               </label>
             </div>
             <div class="color-option">
-              <input type="radio" name="color" value="pink" class="color-radio">
+              <input type="checkbox" id="pink" name="color" value="pink" class="color-radio">
               <label for="pink" class="color-box pink ">
                 Růžová
               </label>
@@ -481,6 +492,7 @@
 
 
       </div>
+
 
 
       <div class="panely">
@@ -502,291 +514,295 @@
           <h2 class=" pb-3">TOP PRODUKTY</h2>
 
           <div class="row products">
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card  w-100 d-flex flex-column">
-                <a href="detail.html"> <img src="images/produkt1.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Rajčatová stolní lampa Dekorace Noční světlo
-                    Severské LED osvětlení </p>
-                  <h6 class="cena pb-4 pt-2">683, 00 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+
+
+            <div class="row products">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card  w-100 d-flex flex-column">
+                  <a href="detail.html"> <img src="images/produkt1.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Rajčatová stolní lampa Dekorace Noční světlo
+                      Severské LED osvětlení </p>
+                    <h6 class="cena pb-4 pt-2">683, 00 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block  mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt2.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Casa Viola - skleněná růžová houbová lampa Estetická výzdoba pokoje </p>
-                  <h6 class="cena pb-4 pt-2">589, 90 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25px" height="25px" viewBox="0 0 24 24"
-                      data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt2.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Casa Viola - skleněná růžová houbová lampa Estetická výzdoba pokoje </p>
+                    <h6 class="cena pb-4 pt-2">589, 90 kč</h6>
+                    <button class="btn-1 pridat"> <svg fill="#000" width="25px" height="25px" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt3.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">houbová Moderní Bauhaus Noční lampa Dánská Oranžová
-                  </p>
-                  <h6 class="cena pb-4 pt-2">552, 90 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt3.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">houbová Moderní Bauhaus Noční lampa Dánská Oranžová
+                    </p>
+                    <h6 class="cena pb-4 pt-2">552, 90 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
 
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card  w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt4.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Bauhaus Mushroom Donut Minimalistická skleněná stolní lampa</p>
-                  <h6 class="cena pb-4 pt-2">479, 00 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card  w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt4.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Bauhaus Mushroom Donut Minimalistická skleněná stolní lampa</p>
+                    <h6 class="cena pb-4 pt-2">479, 00 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt5.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Noční světlo do ložnice - nástěnná Houba do zásuvky </p>
-                  <h6 class="cena pb-4 pt-2">48, 90 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt5.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Noční světlo do ložnice - nástěnná Houba do zásuvky </p>
+                    <h6 class="cena pb-4 pt-2">48, 90 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt6.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Retro kulatá stolní lampa Morandi Nordic z kovu/skla</p>
-                  <h6 class="cena pb-4 pt-2">
-                    602, 90 kč
-                  </h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12 ">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt6.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Retro kulatá stolní lampa Morandi Nordic z kovu/skla</p>
+                    <h6 class="cena pb-4 pt-2">
+                      602, 90 kč
+                    </h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card  w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt7.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Vintage skleněná stolní lampa Bauahus žluto-oranžová</p>
-                  <h6 class="cena pb-4 pt-2">479, 00 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card  w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt7.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Vintage skleněná stolní lampa Bauahus žluto-oranžová</p>
+                    <h6 class="cena pb-4 pt-2">479, 00 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt8.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Velká zelená vintage Bankers Stolní lampa LED kov/sklo</p>
-                  <h6 class="cena pb-4 pt-2">589, 90 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt8.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Velká zelená vintage Bankers Stolní lampa LED kov/sklo</p>
+                    <h6 class="cena pb-4 pt-2">589, 90 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt9.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Murano Skleněná stolní lampa - světlo Ložnice
-                    Obývací pokoj</p>
-                  <h6 class="cena pb-4 pt-2">
-                    459, 90 kč
-                  </h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12 ">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt9.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Murano Skleněná stolní lampa - světlo Ložnice
+                      Obývací pokoj</p>
+                    <h6 class="cena pb-4 pt-2">
+                      459, 90 kč
+                    </h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card  w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt10.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Casa Viola - skleněná noční lampa zeleno/fialovo/růžová</p>
-                  <h6 class="cena pb-4 pt-2">659, 90 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card  w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt10.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Casa Viola - skleněná noční lampa zeleno/fialovo/růžová</p>
+                    <h6 class="cena pb-4 pt-2">659, 90 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt11.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">roztomilí králíček lampa držící osvětlení Noční stolek</p>
-                  <h6 class="cena pb-4 pt-2">379, 90 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt11.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">roztomilí králíček lampa držící osvětlení Noční stolek</p>
+                    <h6 class="cena pb-4 pt-2">379, 90 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt12.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Elegantní a
-                    avantgardní neotenická stolní lampa zkroucený tvar zelená</p>
-                  <h6 class="cena pb-4 pt-2">409, 90 kč
-                  </h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12 ">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt12.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Elegantní a
+                      avantgardní neotenická stolní lampa zkroucený tvar zelená</p>
+                    <h6 class="cena pb-4 pt-2">409, 90 kč
+                    </h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
 
 
-            <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt13.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">stolní lampa Smaltovaný skleněný materiál lampa ve tvaru houby
-                  </p>
-                  <h6 class="cena pb-4 pt-2">339, 90 kč
-                  </h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12 ">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt13.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">stolní lampa Smaltovaný skleněný materiál lampa ve tvaru houby
+                    </p>
+                    <h6 class="cena pb-4 pt-2">339, 90 kč
+                    </h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card  w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt14.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Casa Viola - skleněná noční lampa ve tvaru houby modro-žlutá</p>
-                  <h6 class="cena pb-4 pt-2">679, 90 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card  w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt14.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Casa Viola - skleněná noční lampa ve tvaru houby modro-žlutá</p>
+                    <h6 class="cena pb-4 pt-2">679, 90 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="card w-100 d-flex flex-column ">
-                <a href="detail.html"> <img src="images/produkt15.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Mia houbová stolní lampa Zelená pruhovaná USB konektor</p>
-                  <h6 class="cena pb-4 pt-2">279, 00 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card w-100 d-flex flex-column ">
+                  <a href="detail.html"> <img src="images/produkt15.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Mia houbová stolní lampa Zelená pruhovaná USB konektor</p>
+                    <h6 class="cena pb-4 pt-2">279, 00 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 d-flex d-lg-none">
-              <div class="card  w-100 d-flex flex-column">
-                <a href="detail.html"> <img src="images/produkt14.png" class="card-img-top" alt="..."></a>
-                <div class="card-body px-0">
-                  <p class="card-text">Casa Viola - skleněná noční lampa </p>
-                  <h6 class="cena pb-4 pt-2">679, 90 kč</h6>
-                  <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24" data-name="Layer 1"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
-                    </svg>+ přidat do košíku</button>
-                  <a href="detail.html" class="btn-2 mt-2">Více informací</a>
+              <div class="col-lg-4 col-md-6 col-12 d-flex d-lg-none">
+                <div class="card  w-100 d-flex flex-column">
+                  <a href="detail.html"> <img src="images/produkt14.png" class="card-img-top" alt="..."></a>
+                  <div class="card-body px-0">
+                    <p class="card-text">Casa Viola - skleněná noční lampa </p>
+                    <h6 class="cena pb-4 pt-2">679, 90 kč</h6>
+                    <button class="btn-1"> <svg fill="#000" width="25" height="25" viewBox="0 0 24 24"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                      </svg>+ přidat do košíku</button>
+                    <a href="detail.html" class="btn btn-outline-warning d-block mt-2">Více informací</a>
+                  </div>
                 </div>
               </div>
+
+
             </div>
-
-
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script>
-    function updatePriceValue(value) {
-      document.getElementById('priceValue').textContent = value;
-    }
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script>
+      function updatePriceValue(value) {
+        document.getElementById('priceValue').textContent = value;
+      }
+    </script>
 
 </body>
 

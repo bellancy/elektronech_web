@@ -12,6 +12,17 @@ a {
     max-width: 1400px;
     margin: auto;
 }
+button {
+    outline: none; 
+    box-shadow: none; 
+    border: none; 
+}
+.btn-2:hover, button:hover {
+    transform: scale(1.05)
+}
+.btn-1 .pridat:active svg path {
+      fill: #000;
+}
 
 nav,
 .under-nav-bg {
@@ -22,10 +33,12 @@ nav,
 h1 {
     font-size: 34px;
 }
-
+button .share{
+    padding-right: 4rem;
+}
 .fugaz {
     font-family: "Fugaz One", sans-serif;
-    color: #FFB0A6;
+    color: #FF9100;
     font-size: 50px;
 }
 
@@ -60,16 +73,23 @@ h1 {
 body {
     background-color: black;
 }
-
+.profil, .like {
+   padding-top: 0.8rem;;
+}
 /*mobil */
 @media (max-width: 991px) {
     .navbar-collapse {
         font-size: 1rem;
     }
 
+    
     .navbar svg {
         width: 20px;
         height: 20px;
+    }
+    .navbar .kos svg {
+        width: 25px;
+        height: 25px;
     }
 
     .navbar .navbar-brand img {
@@ -140,7 +160,8 @@ body {
 
 
 .btn-1,
-.btn-2 {
+.btn-2,
+button {
     text-decoration: none !important;
     color: black;
     display: flex;
@@ -149,21 +170,31 @@ body {
     border-radius: 5px;
     padding: 5px;
 }
+.dropdown {
+    margin-top: 0.8rem;
+}
+
 
 .btn-1 {
-    background-color: #FFB0A6;
+    background-color: #FF9100;
     width: 100%;
 }
-
-.btn-2 {
-    background-color: #FFD6D0;
+.dropdown-item p {
+    margin-bottom: 0rem !important;
 }
-
+.btn-2 {
+    background-color: #FF9100;
+}
+.pridat-koupit .btn:hover svg {
+    fill: rgb(0,0,0) !important;;
+}
 .card h6 {
     font-size: 24px;
     color: #FF9E01;
 }
-
+.podrobnosti h6 {
+    color: #ffc001;
+}
 .card {
     background-color: black;
     color: #fff;
@@ -219,13 +250,7 @@ input[type="search"] {
     background-size: 16px;
 }
 
-/* .navbar-toggler-icon {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28ff, ff, ff, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 1rem center;
-    background-size: 16px;
-} */
+
 
 .color-picker {
     display: flex;
@@ -241,8 +266,8 @@ input[type="search"] {
 }
 
 .color-box {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
     margin-bottom: 1rem;
 }
@@ -277,16 +302,14 @@ input[type="search"] {
 
 .color-radio:checked+.color-box,
 .strana-fotky div a:hover {
-    border: 2px solid #fff;
+    border: 1.5px solid #fff;
 }
+
 
 .color-picker label {
     padding-left: 2.5rem;
     padding-top: 4px;
 }
-
-
-
 
 
 
@@ -419,4 +442,8 @@ input[type="search"] {
     justify-content: center;
     border-radius: 5px;
     padding: 5px;
+}
+
+.navbar svg:hover, .navbar ul a:hover {
+    opacity: 70% !important;
 }
