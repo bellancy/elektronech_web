@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lampy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  pb-3 pt-4 px-3 px-md-5" data-bs-theme="dark">
+        <div class="container-fluid px-0 ">
+            <a class="navbar-brand mt-1" href="index.html"><img src="images/Untitled_Artwork7.png" alt="" height="38">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active mt-1" aria-current="page" href="#">Prodejny</a>
+                    </li>
+                </ul>
+
+
+                <div class="nav-right d-flex flex-column flex-sm-row pt-2">
+                    <div class="search mt-2">
+                        <div class="input-group d-flex">
+                            <span class="input-group-text bg-black">
+
+                                <svg fill="#fff" width="25px" height="25px" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.035,18.069a7.981,7.981,0,0,0,3.938-1.035l3.332,3.332a2.164,2.164,0,0,0,3.061-3.061l-3.332-3.332A8.032,8.032,0,0,0,4.354,4.354a8.034,8.034,0,0,0,5.681,13.715ZM5.768,5.768A6.033,6.033,0,1,1,4,10.035,5.989,5.989,0,0,1,5.768,5.768Z" />
+                                </svg>
+
+                            </span>
+                            <input type="search" class="search-input form-control bg-black " placeholder="Co hledáte?"
+                                aria-label="Hledat">
+                            <button class="btn btn-light" type="button">Hledat</button>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex flex-row gap-3 m-auto">
+
+                        <div class=" profil">
+                            <a href="profil.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                    fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                </svg></a>
+                        </div>
+                        <div class="like">
+                            <a href="like.html">
+                                <svg width="30" height="30" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z"
+                                        fill="#fff" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="dropdown border-start border-white ps-2 mt-2 text-white kos">
+
+                            <a href="kosik.html"> <svg fill="#fff" width="35" height="35" viewBox="0 0 24 24"
+                                    data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                                </svg></a>Košík
+                            <a class="btn btn-secondary dropdown-toggle bg-black" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-item">
+                                    <img src="images/produkt4.png" alt="" height="60">
+                                    <p>Bauhaus Mushroom </p>
+                                    <p class="cena-kosik">479, 00kč</p>
+                                </li>
+                                <li class="dropdown-item">
+                                    <hr class="featurette-divider">
+
+                                </li>
+
+                                <li class="dropdown-item">
+                                    <img src="images/produkt8.png" alt="" height="60">
+                                    <p>vintage Bankers</p>
+                                    <p class="cena-kosik">589, 90kč</p>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="obsah text-white">
+        <div class="kroky d-flex">
+            <a href="kosik.html">
+                <div class="krok pe-3">
+                    <p class="cislo-vypln">1</p>
+                    <p>Košík</p>
+                </div>
+            </a>
+            <div class="line"></div>
+            <a href="udaje.html">
+                <div class="krok">
+                    <p class="cislo">2</p>
+                    <p>Dodací údaje</p>
+                </div>
+            </a>
+            <div class="line"></div>
+            <a href="platba.html">
+                <div class="krok">
+                    <p class="cislo">3</p>
+                    <p>Doprava a platba</p>
+                </div>
+            </a>
+            <div class="line"></div>
+            <a href="shrnuti.html">
+                <div class="krok">
+                    <p class="cislo">4</p>
+                    <p>Shrnutí objednávky</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="obsah-kosik pt-4">
+            <h2>Nákupní košík</h2>
+            <div class="nadpisy d-flex d-none d-md-flex">
+                <div class="col-8">
+                    <h6>Polozka:</h6>
+                </div>
+                <div class="col-2">
+                    <h6>Množství: </h6>
+                </div>
+                <div class="col-2">
+                    <h6>Mezisoučet:</h6>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="polozka d-flex py-3">
+                <div class="popis">
+
+                    <div class="nazev d-flex  flex-column flex-md-row">
+                        <img src="images/produkt4.png" alt="" height="200" class="pe-5  mb-4 mb-lg-0">
+                        <div class="polozka-text col-8 pe-5">
+                            <h5>Bauhaus Mushroom Donut Minimalistická skleněná stolní lampa</h5>
+                            <p class="oranz"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    fill="#FF9100" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg> Na skladě</p>
+                            <p class="jistota pt-3">Dodatečná jistota <a href="info-button"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#FF9100"
+                                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                                    </svg></a></p>
+
+                            <div class="odebrat-like d-flex gap-3">
+                                <button class=" d-block"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                    </svg>
+                                    odebrat &zwj;</button>
+
+                                <button class="d-block"><svg width="20" height="20" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z"
+                                            fill="#000" />
+                                    </svg> to se mi líbí &zwj; &#8205;&#8205;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
