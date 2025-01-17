@@ -85,6 +85,12 @@ body {
     padding-top: 0.8rem;
     ;
 }
+@media (max-width: 440px) {
+    .navbar img {
+        height: 33px!important;
+    }
+}
+
 
 /*mobil */
 @media (max-width: 991px) {
@@ -97,6 +103,7 @@ body {
         width: 20px;
         height: 20px;
     }
+    
 
     .navbar .kos svg {
         width: 25px;
@@ -106,7 +113,7 @@ body {
     .navbar .navbar-brand img {
         height: 45px;
     }
-
+    
     .search {
         padding-right: 0;
     }
@@ -523,9 +530,16 @@ input[type="search"] {
     width: 20px;
     background-color: #ffd900;
 }
+
 .obsah-kosik {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@media (min-width: 1000px) {
+    .obsah-kosik {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
 
 .obsah-kosik hr {
@@ -550,4 +564,52 @@ input[type="search"] {
         flex-grow: 0.2;
     }
    
+}
+
+
+
+
+.cara, .cara-ne {
+    background-color: #FF9100;
+    height: 5px;
+    width: 11rem;  
+    margin-top: 1.5rem;
+}
+.cara-ne {
+    background-color: #fff;
+}
+
+.steps-popis {
+    width: 48.5%;
+}
+
+
+@media (max-width: 576px) {
+    .steps svg {
+        height: 40px;
+        width: 40px;
+    }
+
+.cara, .cara-ne {
+    height: 3px;
+    width: 11rem;  
+    margin-top: 1.2rem;
+}
+}
+
+@media (max-width: 768px) {
+    .w-md-100 {
+        width: 100% !important;
+      }
+      .w-md-92 {
+        width: 92% !important;
+      }
+      
+}
+.steps-popis a, .steps-popis p {
+    text-decoration: none;
+    color: #fff;
+}
+.steps-popis a p:hover {
+    color: #FF9100;
 }
