@@ -630,20 +630,23 @@ input[type="number"]::-webkit-inner-spin-button,
     text-decoration: none;
     color: #fff;
 }
-.pokracuj a {
+.pokracuj a, .dalsi a {
     text-decoration: none;
     color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pokracuj  {
+.pokracuj, .dalsi  {
     background-color: #ff9100!important;
-    width: 13rem;
+    min-width: 13rem;
     border-radius: 5px;
     padding: 5px;
 }
-.pokracuj:hover {
+.dalsi {
+    min-width: 9rem;
+}
+.pokracuj:hover, .dalsi:hover {
     background-color: #FFd900!important;
 }
 

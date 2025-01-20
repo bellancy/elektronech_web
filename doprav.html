@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lampy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg  pb-3 pt-4 px-3 px-md-5" data-bs-theme="dark">
+        <div class="container-fluid px-0 ">
+            <a class="navbar-brand mt-1" href="index.html"><img src="images/Untitled_Artwork7.png" alt="" height="38">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active mt-1" aria-current="page" href="#">Prodejny</a>
+                    </li>
+                </ul>
+
+
+                <div class="nav-right d-flex flex-column flex-sm-row pt-2">
+                    <div class="search mt-2">
+                        <div class="input-group d-flex">
+                            <span class="input-group-text bg-black">
+
+                                <svg fill="#fff" width="25px" height="25px" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.035,18.069a7.981,7.981,0,0,0,3.938-1.035l3.332,3.332a2.164,2.164,0,0,0,3.061-3.061l-3.332-3.332A8.032,8.032,0,0,0,4.354,4.354a8.034,8.034,0,0,0,5.681,13.715ZM5.768,5.768A6.033,6.033,0,1,1,4,10.035,5.989,5.989,0,0,1,5.768,5.768Z" />
+                                </svg>
+
+                            </span>
+                            <input type="search" class="search-input form-control bg-black " placeholder="Co hledáte?"
+                                aria-label="Hledat">
+                            <button class="btn btn-light" type="button">Hledat</button>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex flex-row gap-3 m-auto">
+
+                        <div class=" profil">
+                            <a href="profil.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                    fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                                </svg></a>
+                        </div>
+                        <div class="like">
+                            <a href="like.html">
+                                <svg width="30" height="30" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z"
+                                        fill="#fff" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="dropdown border-start border-white ps-2 mt-2 text-white kos">
+
+                            <a href="kosik.html"> <svg fill="#fff" width="35" height="35" viewBox="0 0 24 24"
+                                    data-name="Layer 1" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.5,19A1.5,1.5,0,1,0,10,20.5,1.5,1.5,0,0,0,8.5,19ZM19,16H7a1,1,0,0,1,0-2h8.49121A3.0132,3.0132,0,0,0,18.376,11.82422L19.96143,6.2749A1.00009,1.00009,0,0,0,19,5H6.73907A3.00666,3.00666,0,0,0,3.92139,3H3A1,1,0,0,0,3,5h.92139a1.00459,1.00459,0,0,1,.96142.7251l.15552.54474.00024.00506L6.6792,12.01709A3.00006,3.00006,0,0,0,7,18H19a1,1,0,0,0,0-2ZM17.67432,7l-1.2212,4.27441A1.00458,1.00458,0,0,1,15.49121,12H8.75439l-.25494-.89221L7.32642,7ZM16.5,19A1.5,1.5,0,1,0,18,20.5,1.5,1.5,0,0,0,16.5,19Z" />
+                                </svg></a>Košík
+                            <a class="btn btn-secondary dropdown-toggle bg-black" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-item">
+                                    <img src="images/produkt4.png" alt="" height="60">
+                                    <p>Bauhaus Mushroom </p>
+                                    <p class="cena-kosik">479, 00kč</p>
+                                </li>
+                                <li class="dropdown-item">
+                                    <hr class="featurette-divider">
+
+                                </li>
+
+                                <li class="dropdown-item">
+                                    <img src="images/produkt8.png" alt="" height="60">
+                                    <p>vintage Bankers</p>
+                                    <p class="cena-kosik">589, 90kč</p>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="obsah">
+        <div class="steps d-flex justify-content-between w-50 w-md-100 m-auto pt-5 px-md-1 px-3">
+            <a href="kosik.html">
+                <div class="step1"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#FF9100"
+                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                    </svg></div>
+            </a>
+            <div class="cara"></div>
+            <a href="doprav.html">
+                <div class="step2"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#FF9100"
+                        class="bi bi-2-circle" viewBox="0 0 16 16">
+                        <path
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306" />
+                    </svg></div>
+            </a>
+            <div class="cara"></div>
+            <div class="step3"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
+                    class="bi bi-3-circle" viewBox="0 0 16 16">
+                    <path
+                        d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318" />
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+                </svg></div>
+            <div class="cara-ne"></div>
+            <div class="step4"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white"
+                    class="bi bi-4-circle" viewBox="0 0 16 16">
+                    <path
+                        d="M7.519 5.057q.33-.527.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218" />
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+                </svg></div>
+        </div>
+
+        <div class="steps-popis d-flex w-md-92 justify-content-between  m-auto mt-1 ">
+            <a href="kosik.html">
+                <p class="popis-steps">Košík</p>
+            </a>
+
+            <a href="doprav.html">
+                <p class="popis-steps">Doprava</p>
+            </a>
+
+            <div class="step3">
+                <p class="popis-steps">Shrnuti</p>
+            </div>
+
+            <div class="step4">
+                <p class="popis-steps">Platba</p>
+            </div>
+        </div>
+
+
+        <div class="d-flex flex-column flex-xl-row px-lg-5 pt-3 px-3">
+            <div class="udaje col-xl-8 col-12 pt-5">
+                <h4 class="mb-3 text-center text-white">Dodací údaje</h4>
+                <div class="mb-3 me-2">
+
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Emailová adresa">
+                </div>
+                <div class="d-flex gap-3 me-4">
+                    <div class="mb-3 col-6">
+
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Vaše jméno">
+                    </div>
+                    <div class="mb-3 col-6">
+
+                        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Příjmení">
+                    </div>
+                </div>
+                <div class="mb-3 me-2">
+
+                    <input type="text" class="form-control" id="exampleFormControlInput4"
+                        placeholder="Ulice, Číslo popisné">
+                </div>
+                <div class="mb-3 me-2">
+
+                    <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Město, PSČ">
+                </div>
+                <div class="mb-3 me-2">
+                    <select class="form-select" id="country" name="country" required>
+                        <option value="">Vyberte zemi</option>
+                        <option value="CZ">Česká republika</option>
+                        <option value="SK">Slovensko</option>
+                        <option value="DE">Německo</option>
+                        <option value="PL">Polsko</option>
+                        <option value="PL">Francie</option>
+                        <option value="PL">USA</option>
+                        <option value="PL">Velká Británie</option>
+                        <option value="PL">Švýcarsko</option>
+                        <option value="PL">Kanada</option>
+                        <option value="PL">Španělsko</option>
+                    </select>
+                </div>
+                <div class="mb-3 me-2">
+
+                    <input type="tel" class="form-control" id="exampleFormControlInput7" placeholder="telefonní číslo">
+                </div>
+            </div>
+
+
+            <div class="zpusob col-xl-4 col-12 py-5">
+                <h4 class="mb-3 text-center text-white">Vyberte způsob dopravy</h4>
+                <div class="px-md-3">
+                    <div class="list-group">
+
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <input type="radio" class="form-check-input" name="shipping" value="zasilkovna" checked>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF9100"
+                                class="bi bi-box" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.24 1.21A1 1 0 0 1 4 1h8a1 1 0 0 1 .76.21l3.5 2.8a1 1 0 0 1 .24.99l-1.21 4.82a1 1 0 0 1-.45.57L8 15 1.24 10.4a1 1 0 0 1-.45-.57L-.01 5.1a1 1 0 0 1 .25-.99l3.5-2.8zM4 2L1.5 4h13L12 2H4z" />
+                            </svg>
+                            <div>
+                                <strong>Zásilkovna</strong>
+                                <p class="mb-0 text-muted">Cena: 59 Kč (Česko, Slovensko)</p>
+                            </div>
+                        </div>
+
+
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <input type="radio" class="form-check-input" name="shipping" value="courier">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF9100"
+                                class="bi bi-truck" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v11h1a1 1 0 0 1 1 1v1h1a1 1 0 0 1 0 2H11v-2H5v2H1a1 1 0 1 1 0-2h1v-1a1 1 0 0 1 1-1h1V1zM4 11V1H2v10h2zM7 1v10h2V1H7zm3 0v10h2V1h-2zm3 1.5a.5.5 0 0 0-.5.5v4h2.13a.5.5 0 0 0 .37-.17L14.44 5h-1.44v-2h1.5a.5.5 0 0 0 .5-.5zM6 14v-1H4v1h2zm6 0v-1h-2v1h2zm-3 0v-1H7v1h2z" />
+                            </svg>
+                            <div>
+                                <strong>Mezinárodní kurýr</strong>
+                                <p class="mb-0 text-muted">Cena: 199 Kč (Evropa), 499 Kč (Svět)</p>
+                            </div>
+                        </div>
+
+
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <input type="radio" class="form-check-input" name="shipping" value="post">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF9100"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm13.854-.146A.5.5 0 0 1 14 4.5v7a.5.5 0 0 1-.146.354l-5-5-.708.708L13.5 12.5a.5.5 0 0 1-.708.708l-5-5-5 5a.5.5 0 0 1-.708-.708L5.5 7.5l-.708-.708-5 5a.5.5 0 0 1-.354-.146v-7A.5.5 0 0 1 .146 4.5L6 9.5l5.854-5.854z" />
+                            </svg>
+                            <div>
+                                <strong>Pošta</strong>
+                                <p class="mb-0 text-muted">Cena: 79 Kč (Česko, Slovensko), 149 Kč (Mezinárodní)</p>
+                            </div>
+                        </div>
+
+
+                        <div class="list-group-item d-flex align-items-center gap-3">
+                            <input type="radio" class="form-check-input" name="shipping" value="drone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF9100"
+                                class="bi bi-helicopter" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.5 1a.5.5 0 0 1 .5.5V3h1V1.5a.5.5 0 0 1 1 0V3h1.5a.5.5 0 0 1 0 1h-1.507l-1.126 1.126A2.002 2.002 0 0 1 13 6.5V9a2 2 0 0 1-1.006 1.732c.022.095.006.166.006.268 0 .09.002.175.002.268.001 1.105-.448 2-1.5 2-.637 0-1.16-.314-1.462-.826A1.988 1.988 0 0 1 8 14a1.99 1.99 0 0 1-1.538-.826c-.301.512-.825.826-1.462.826C4.949 14 4.5 13.105 4.5 12c0-.093.001-.178.002-.268 0-.102-.016-.173.006-.268A2 2 0 0 1 3.5 9V6.5a2.002 2.002 0 0 1 .633-1.374L3.007 4H1.5a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 1 0V3h1V1.5a.5.5 0 0 1 1 0V3h1V1.5a.5.5 0 0 1 .5-.5h3z" />
+                            </svg>
+                            <div>
+                                <strong>Doručení dronem</strong>
+                                <p class="mb-0 text-muted">Cena: 299 Kč (Dostupné v Česku a Německu)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex  justify-content-center">
+            <div class="dalsi mt-2 mb-5">
+                <a href="shrnuti.html">Další krok<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                        fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
