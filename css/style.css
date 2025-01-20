@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fugaz+One&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -663,4 +668,8 @@ input[type="number"]::-webkit-inner-spin-button,
 }
 .nazev {
     margin-right: 1rem;
+}
+.oranz {
+    color: #ff9100;
+    font-size: 20px;
 }
