@@ -33,6 +33,7 @@ button:hover {
     fill: #000;
 }
 
+
 nav,
 .under-nav-bg {
     max-width: 1500px;
@@ -536,12 +537,12 @@ input[type="search"] {
     background-color: #ffd900;
 }
 
-.obsah-kosik {
+.obsah-kosik, .obsah-platba {
     padding-left: 2rem;
     padding-right: 2rem;
 }
 @media (min-width: 1035px) {
-    .obsah-kosik {
+    .obsah-kosik, .obsah-platba {
         padding-left: 5rem;
         padding-right: 5rem;
     }
@@ -655,7 +656,7 @@ input[type="number"]::-webkit-inner-spin-button,
     background-color: #FFd900!important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 676px) {
     .obsah-kosik p {
         font-size: 90%;
     }
@@ -663,13 +664,105 @@ input[type="number"]::-webkit-inner-spin-button,
         font-size: 113%;
     }
     .polozka-text h5 {
-        max-width: 300px;
+        max-width: 220px;
     }
 }
-.nazev {
-    margin-right: 1rem;
+
+@media (min-width: 576px) {
+    .nazev {
+        margin-right: 1rem;
+    }
 }
+
 .oranz {
     color: #ff9100;
     font-size: 20px;
+}
+
+.dop-muted {
+    font-size: 13px;
+}
+
+
+.obsah-platba .list-group {
+    --bs-list-group-color: rgb(255, 255, 255)!important;
+    --bs-list-group-bg: rgb(0, 0, 0) !important;
+    --bs-list-group-border-color: none!important;
+    --bs-list-group-item-padding-x: 0rem;
+}
+.obsah-platba .list-group p {
+    text-align: center;
+}
+
+.platba-text {
+    display: none;
+}
+/* Zobrazuje obsah, pokud je rádio tlačítko zaškrtnuté */
+input[type="radio"]:checked ~ .platba-text {
+    display: block;
+}
+
+.hotovo a {
+    text-decoration: none;
+    background-color: #FF9100;
+    color: #000;
+    border-radius: 5px;
+}
+
+.hotovo a:hover {
+    background-color: #ffd900;
+}
+
+.card {
+    --bs-card-spacer-y: 0rem;
+    --bs-card-spacer-x: 0rem;
+    background-color: none;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  button.srdce[aria-pressed="true"] svg path {
+    fill: rgb(203, 16, 16); 
+}
+
+button.srdce[aria-pressed="false"] svg path {
+    fill: black;
+}
+
+.share {
+    padding-right: 2rem!important;
+}
+.products div {
+    position: relative;
+}
+.button .srdce-detail {
+    background-color: none!important;
+}
+.srdce-detail {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
