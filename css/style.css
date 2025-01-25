@@ -609,11 +609,11 @@ input[type="search"] {
       }
       
 }
-.steps-popis a, .steps-popis p {
+.steps-popis a, .steps-popis p, .zapomen a {
     text-decoration: none;
     color: #fff;
 }
-.steps-popis a p:hover {
+.steps-popis a p:hover, .zapomen a:hover {
     color: #FF9100;
 }
 
@@ -770,4 +770,9 @@ button.srdce-like[aria-pressed="false"] svg path {
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+
+.mapa {
+    width: 100%;
+    height: 600px;
 }
